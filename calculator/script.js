@@ -27,3 +27,9 @@ Array.from(buttons).forEach((button) => {
 
     })
 })
+
+// sound function
+function sound(){
+    var snd = new Audio('click.wav')
+    snd.play()//plays the sound
+}
