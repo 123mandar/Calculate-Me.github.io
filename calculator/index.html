@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Dynamic Calculator</title>
 </head>
 <body>
-    <div class="container bg-red mx-auto">
-        
-    <div class="row">
-        <input class="input" type="text">
-    </div>
-    
+    <div class="container mx-auto">
+        <div class="panel-meta">
+            <span class="badge" id="clock">--:--:--</span>
+            <button class="badge badge-toggle" id="themeToggle" aria-label="Toggle theme">🌗 Theme</button>
+        </div>
+
+        <div class="row display-row">
+            <input class="input" type="text" readonly aria-label="Calculator display">
+            <div class="sub-display" id="subDisplay">Ready</div>
+        </div>
+
         <div class="row">
             <button onclick="sound()" class="button">C</button>
             <button onclick="sound()" class="button">%</button>
             <button onclick="sound()" class="button">M+</button>
-            <button onclick="sound()" class="button">M-   </button>
+            <button onclick="sound()" class="button">M-</button>
         </div>
         <div class="row">
             <button onclick="sound()" class="button">7</button>
@@ -27,10 +32,10 @@
             <button onclick="sound()" class="button">*</button>
         </div>
         <div class="row">
-            <button onclick="sound()"  class="button">4</button>
-            <button onclick="sound()"  class="button">5</button>
-            <button onclick="sound()"  class="button">6</button>
-            <button onclick="sound()"  class="button">/</button>
+            <button onclick="sound()" class="button">4</button>
+            <button onclick="sound()" class="button">5</button>
+            <button onclick="sound()" class="button">6</button>
+            <button onclick="sound()" class="button">/</button>
         </div>
         <div class="row">
             <button onclick="sound()" class="button">1</button>
@@ -48,4 +53,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
